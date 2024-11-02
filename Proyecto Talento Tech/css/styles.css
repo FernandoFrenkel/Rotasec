@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+
+header {
+    background-color: #4a524b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.header_nav {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border: inset;
+}
+
+.header_nav_secciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+.container_section_name {
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#section_productos {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.nav_logo {
+    height: 8rem;
+    width: 11rem;
+}
+
+.header_nav_productos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container_area_productos {
+    background-color: rgb(47, 66, 47);
+    padding: 0rem 0rem;
+    background-size: 25%;
+    text-align: center;
+}
+
+.container_area_tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem 4rem;
+    gap: 4rem
+}
+
+.tarjeta_producto {
+    width: 22rem;
+    height: 22rem;
+    background-color: rgba(74, 82, 75, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    border-radius: 10px;
+
+}
+
+.tarjeta_producto:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: rgba(74, 82, 75, 1);
+}
+
+.img_producto {
+    width: 90%;
+
+}
+
+.container_area_contacto {
+    background-color: rgb(47, 66, 47);
+    padding: 4rem 0rem;
+    background-size: 25%;
+    text-align: center;
+}
+
+.container_copyright {
+    width: 100%;
+    background-color: #4a524b;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.background_acerca {
+    /* background-color: yellow;  */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(to bottom, rgb(74, 82, 75), rgb(47, 66, 47));
+    padding: 2rem;
+}
+
+.container_acerca {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    text-align: justify;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+
+    p {
+        width: 80%;
+        display: flex;
+        text-align: justify;
+        padding: 20px;
+    }
+}
+
+.container_area_contacto {
+    background-color: rgb(47, 66, 47); /* Fondo verde oscuro */
+    padding: 4rem 0rem;
+    text-align: center;
+}
+
+
+.container_contacto {
+    width: 67%; 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.container_form, .area_info_contacto {
+    width: 50%; /* Cada uno ocupa el 50% del espacio */
+}
+
+.area_info_contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem; /* Espacio entre la info de contacto y el mapa */
+}
+
+.contacto_title {
+    text-align: start;
+    font-size: 18px; /* Ajustar el tamaño según sea necesario */
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px; /* Espacio entre el título y la lista */
+}
+
+.info_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Esto alinea todo al inicio (start) */
+    padding: 20px;
+}
+
+.contacto_title {
+    font-size: 18px; /* Ajustar el tamaño del texto si es necesario */
+    color: black;
+    margin-bottom: 15px; /* Espacio entre el título y la lista */
+}
+
+.info_contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: start; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.info_contacto ul li {
+    display: flex;
+    align-items: center; /* Asegura que los íconos y el texto estén alineados */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+.info_contacto ul li i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+.area_ubicacion {
+    flex: 1; /* El iframe ocupa el espacio inferior */
+    height: 300px; /* Ajusta la altura del mapa */
+}
+
+ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form textarea {
+    resize: none; 
+}
+footer {
+    background-color: #4a524b;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+.container_area_media {
+    background: linear-gradient(to bottom, rgb(74, 82, 75), rgb(47, 66, 47));
+    background-size: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+.container_media-info {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem 1rem;
+    margin: 0 auto;
+    align-items: stretch; /* Asegura que ambos divs tengan la misma altura */
+    gap: 2rem; /* Se agrega espacio entre el video y la información */
+}
+
+.container_video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el contenido respete los bordes redondeados */
+    background-color: black; /* Color de fondo */
+}
+
+.container_video video {
+    width: 100%;
+    height: 100%; /* Asegura que el video ocupe todo el espacio disponible */
+    object-fit: cover; /* Asegura que el video mantenga proporción al redimensionarse */
+}
+
+.container_info {
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.container_info p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.footer_area {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.container_footer_info {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+
+.container_copyright {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer_nav ul, 
+.footer_contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_nav li,
+.footer_contacto li {
+    text-align: start; /* Alinear texto al inicio */
+    margin: 10px 0;
+}
+
+.footer_nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_nav a:hover {
+    text-decoration: underline;
+}
+
+.footer_contacto i {
+    margin-right: 10px;
+}
+
+.footer_nav i,
+.footer_contacto i {
+    margin-right: 8px;
+}
+
+/* Iconos más grandes para mayor visibilidad */
+.footer_nav i,
+.footer_contacto i {
+    font-size: 18px;
+}
+
+.footer_nav ul, .footer_contacto ul {
+    font-size: 0.9rem; /* Tamaño igual al del copyright */
+}
+
+
+.container_area_reseñas {
+    background: linear-gradient(to bottom, rgb(47, 66, 47, rgb(74, 82, 75)));
+    padding: 0rem 0rem;
+    background-size: 25%;
+    text-align: center;
+}
+
